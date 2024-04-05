@@ -5,10 +5,10 @@ def waiting_game():
     print(f'You need to wait for exactly {target_sec} seconds to win a game!')
 
     input('---Press ENTER to start---')
-    start_time = time.time()
+    start_time = time.perf_counter()
     
     input('---Press ENTER to finish---')
-    end_time = time.time()
+    end_time = time.perf_counter()
 
     elapsed_time = end_time - start_time
 
